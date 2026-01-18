@@ -43,12 +43,13 @@ if uploaded_file is not None:
     )
 
     with st.spinner("Detecting potholes..."):
-        result = client.run_workflow(
-            workspace_name="project1-mflte",
-            workflow_id="find-potholes",
-            images={"image": uploaded_file.name},
-            use_cache=True
-        )
+    result = client.run_workflow(
+        workspace_name="project1-mflte",
+        workflow_id="find-potholes",
+        images={"image": uploaded_file}
+    )
+
+
 
     # ----------------------------
     # Decode visualization image
