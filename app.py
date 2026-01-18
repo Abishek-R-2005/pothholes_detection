@@ -23,7 +23,7 @@ if uploaded_file:
 
     client = InferenceHTTPClient(
         api_url="https://serverless.roboflow.com",
-        api_key="YOUR_API_KEY"
+        api_key="7l5BKkxbenEWpBCBPtSw"
     )
 
     with st.spinner("Detecting potholes..."):
