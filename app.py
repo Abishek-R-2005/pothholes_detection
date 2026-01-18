@@ -42,12 +42,17 @@ if uploaded_file is not None:
         api_key="7l5BKkxbenEWpBCBPtSw"
     )
 
+    image_bytes = uploaded_file.getvalue()
+
     with st.spinner("Detecting potholes..."):
         result = client.run_workflow(
         workspace_name="project1-mflte",
         workflow_id="find-potholes",
-        images={"image": uploaded_file}
+        images={
+            "image": image_bytes
+        }
     )
+
 
 
 
