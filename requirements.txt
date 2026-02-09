@@ -1,4 +1,6 @@
-streamlit==1.32.2
-inference-sdk==0.15.1
-opencv-python-headless==4.9.0.80
-numpy<2
+streamlit
+opencv-python-headless
+numpy
+Pillow
+matplotlib
+inference-sdk
